@@ -75,7 +75,7 @@ There are **two different install paths** with very different surface areas. Pic
 This adds slash commands and agent definitions only. The Ruflo MCP server is NOT registered, so `memory_store`, `swarm_init`, `agent_spawn`, etc. won't be callable from Claude. For the full loop, use Path B below.
 
 <details>
-<summary><strong>🔌 All 33 plugins</strong></summary>
+<summary><strong>🔌 All 34 plugins</strong></summary>
 
 #### Core & Orchestration
 
@@ -131,6 +131,7 @@ This adds slash commands and agent definitions only. The Ruflo MCP server is NOT
 | [**ruflo-adr**](plugins/ruflo-adr/README.md) | Track architecture decisions with a living record |
 | [**ruflo-ddd**](plugins/ruflo-ddd/README.md) | Scaffold domain-driven design — contexts, aggregates, events |
 | [**ruflo-sparc**](plugins/ruflo-sparc/README.md) | Guided 5-phase development methodology with quality gates |
+| [**ruflo-metaharness**](https://github.com/ruvnet/ruflo/blob/main/plugins/ruflo-metaharness/README.md) | Audit any agent harness — readiness scoring, MCP security scan, threat model, composite audits, ADR-152 §3.1 genome similarity, one-command drift detection ([guide](https://github.com/ruvnet/ruflo/blob/main/docs/metaharness-user-guide.md)) |
 
 #### DevOps & Observability
 
@@ -200,7 +201,7 @@ claude mcp add ruflo -- npx ruflo@latest mcp start
 | 🧠 **Self-Learning** | SONA neural patterns, ReasoningBank, trajectory learning |
 | 💾 **Vector Memory** | HNSW-indexed AgentDB — measured ~1.9x faster at N=20k, ~3.2x–4.7x at N=5k vs brute force (recall@10 ~0.99); ANN wins above the crossover, ties/loses at small N. See [audit](docs/reviews/intelligence-system-audit-2026-05-29.md) + [`scripts/benchmark-intelligence.mjs`](scripts/benchmark-intelligence.mjs) |
 | ⚡ **Background Workers** | 12 auto-triggered workers (audit, optimize, testgaps, etc.) |
-| 🧩 **Plugin Marketplace** | 32 native Claude Code plugins + 21 npm plugins |
+| 🧩 **Plugin Marketplace** | 33 native Claude Code plugins + 21 npm plugins |
 | 🔌 **Multi-Provider** | Claude, GPT, Gemini, Cohere, Ollama with smart routing |
 | 🛡️ **Security** | AIDefence, input validation, CVE remediation, path traversal prevention |
 | 🌐 **Agent Federation** | Cross-installation agent collaboration with zero-trust security |
